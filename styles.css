@@ -5,7 +5,7 @@ body {
 }
 header {
   background-color: rgba(210, 218, 224, 0.603);
-  position: fixed;
+  position: relative;
   display: flex;
   top: -5px;
   left: -5px;
@@ -150,7 +150,17 @@ footer {
   text-decoration: none;
   color: rgb(69, 65, 65);
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   body {
+    overflow-x: hidden;
+  }
+  header {
+    background-position: 100%;
+  }
+  header img {
+    font-size: 14px;
+  }
+  header nav {
+    font-size: 14px;
   }
 }
