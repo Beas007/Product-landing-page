@@ -109,7 +109,7 @@ h3 {
 #pricing {
   display: flex;
   text-align: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding-bottom: 30px;
 }
 #first,
@@ -170,6 +170,7 @@ footer {
     font-size: 14px;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
   }
 
   #img-header {
