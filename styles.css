@@ -99,8 +99,6 @@ h3 {
 #how-it-works {
   padding-bottom: 30px;
 }
-#videos {
-}
 #video {
   width: 70%;
   display: block;
@@ -112,6 +110,7 @@ h3 {
   display: flex;
   text-align: center;
   justify-content: space-evenly;
+  padding-bottom: 30px;
 }
 #first,
 #second,
@@ -124,9 +123,9 @@ h3 {
 #pricing h4 {
   background-color: rgba(240, 248, 255, 0.639);
   border-radius: 3px;
-  padding: 15px;
+  padding: 14px;
   font-weight: 400;
-  margin-top: -1px;
+  margin-top: 1px;
 }
 #pricing p {
   font-size: 24px;
