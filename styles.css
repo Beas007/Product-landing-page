@@ -1,35 +1,44 @@
 .container {
+  margin: 0;
+  overflow-x: hidden;
   background-color: rgb(186, 184, 231);
   font-family: Georgia, "Times New Roman", Times, serif;
   height: 100vh;
   width: 100%;
-  margin: 0;
+  text-align: center;
 }
 #header {
-  display: flex;
+  display: inline-flex;
+  justify-content: space-between;
   background-color: rgba(210, 218, 224, 0.603);
-  max-width: 100%;
+  width: 100%;
 }
-#header-img {
-  display: inline;
-  padding-top: 10px;
-  justify-content: left;
-  width: 250px;
-  height: 30px;
+
+#header {
+  #header-img {
+    display: inline;
+    padding-top: 10px;
+    justify-content: left;
+    width: 250px;
+    height: 30px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+  }
+  li {
+    display: inline;
+    font-size: 16px;
+  }
+  a {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(69, 65, 65);
+  }
 }
-#nav-bar {
-  display: flex;
-  padding-top: 6px;
-}
-.nav-link {
-  float: right;
-}
-.nav-link a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: rgb(69, 65, 65);
-}
+
 .one {
   margin-top: 100px;
   margin-bottom: 40px;
@@ -152,9 +161,12 @@ footer {
   color: rgb(69, 65, 65);
 }
 @media only screen and (max-width: 500px) {
-  body {
+  .container {
     font-size: 14px;
-  }
+    display:flex;
+flex-direction: column;
+  }  
+}
   header img {
     font-size: 10px;
     text-align: center;
