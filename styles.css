@@ -8,34 +8,32 @@
   text-align: center;
 }
 #header {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
+  position: fixed;
   background-color: rgba(210, 218, 224, 0.603);
   width: 100%;
+  top: 0;
 }
 #header-img {
-  display: block;
   padding-top: 10px;
   justify-content: left;
   width: 250px;
-  height: 30px;
+  height: 50px;
 }
-#header {
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding-top: 10px;
-  }
-  li {
-    display: inline;
-    font-size: 16px;
-  }
-  a {
-    padding: 10px;
-    text-decoration: none;
-    color: rgb(69, 65, 65);
-  }
+#header ul {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 20px;
+}
+#header li {
+  display: inline;
+  font-size: 16px;
+}
+#header a {
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(69, 65, 65);
 }
 
 .one {
@@ -165,25 +163,28 @@ footer {
   color: rgb(69, 65, 65);
   padding: 5px;
 }
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   .container {
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
     overflow-x: hidden;
+    font-size: 14px;
   }
-
+  #header {
+    width: 100%;
+  }
   #img-header {
-    width: 10px;
-    height: 5px;
+    width: 150px;
+    height: 20px;
     text-align: left;
+  }
+  #header ul {
+    padding-top: 10px;
   }
   #header li {
     display: inline;
     font-size: 12px;
   }
-  #header ul {
-    padding-top: 15px;
+  #form h2 {
+    font-size: 18px;
   }
   #features {
     margin: auto 0;
@@ -191,15 +192,18 @@ footer {
   #features i {
     display: none;
   }
-
+  #features h3 {
+    font-size: 16px;
+  }
   #features h3,
   p {
     display: block;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
-  #videos {
-    font-size: 35px;
+  #video {
+    width: 100px;
+    height: 100px;
   }
   #pricing {
     display: flex;
@@ -214,7 +218,7 @@ footer {
     text-align: center;
   }
   footer {
-    display: flex;
+    display: block;
     flex-direction: column;
     text-align: center;
   }
